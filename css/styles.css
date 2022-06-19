@@ -9,4 +9,9 @@ body {
   font-family: 'Baumans', cursive;
   text-align: center;
   color: rgb(37, 50, 60);
+  padding: 20px;
+}
+
+.form-group:hover {
+  color: rgb(173, 201, 220);
 }
