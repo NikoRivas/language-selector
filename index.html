@@ -9,65 +9,75 @@
 </head>
 
 
-
 <body>
-  <div id="quiz">
-    <h1 id="languageHeader">Discover your Programming Language Match</h1>
+  <div class="jumbotron jumbotron-fluid bg-success bg-gradient">
+    <div class="container">
+      <h1 class="display-4" id="languageHeader">Discover your Programming Language Match</h1>
+    </div>
+  </div>
+
+  <div class="container" id="quiz">
+
     <form>
-      <h2>Why do you want to learn how to code?</h2>
-      <input type="radio" id="why1" name="whyCode" value="javascript">
-      <label for="why1">To get rich quick!</label><br>
-      <input type="radio" id="why2" name="whyCode" value="ruby">
-      <label for="why2">To be creative and build cool things.</label><br>
-      <input type="radio" id="why3" name="whyCode" value="python">
-      <label for="why3">To impress my dog.</label>
+      <div class="form-group">
+        <h2>Why do you want to learn how to code?</h2>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="why1" name="whyCode" value="javascript">
+          <label class="form-check-label" for="why1">To get rich quick!</label><br>
+          <input class="form-check-input" type="radio" id="why2" name="whyCode" value="ruby">
+          <label class="form-check-label" for="why2">To be creative and build cool things.</label><br>
+          <input class="form-check-input" type="radio" id="why3" name="whyCode" value="python">
+          <label class="form-check-label" for="why3">To impress my dog.</label>
+        </div>
+      </div>
+      <br>
+      <div class="form-group">
+        <h2>What's your favorite shape?</h2>
+        <input class="form-check-input" type="radio" id="shape1" name="favShape" value="javascript">
+        <label class="form-check-label" for="shape1">Rhombus</label><br>
+        <input class="form-check-input" type="radio" id="shape2" name="favShape" value="ruby">
+        <label class="form-check-label" for="shape2">Parallelogram</label><br>
+        <input class="form-check-input" type="radio" id="shape3" name="favShape" value="python">
+        <label class="form-check-label" for="shape3">Octagon</label>
+      </div>
+      <br>
+      <div class="form-group">
+        <h2>What do you find more interesting?</h2>
+        <input class="form-check-input" type="radio" id="interest1" name="whatInterest" value="javascript">
+        <label class="form-check-label" for="int1">Solving logic puzzles</label><br>
+        <input class="form-check-input" type="radio" id="interest2" name="whatInterest" value="ruby">
+        <label class="form-check-label" for="int2">Aesthetic design</label><br>
+        <input class="form-check-input" type="radio" id="interest3" name="whatInterest" value="python">
+        <label class="form-check-label" for="int3">Building games</label>
+      </div>
 
       <br>
-
-      <h2>What's your favorite shape?</h2>
-      <input type="radio" id="shape1" name="favShape" value="javascript">
-      <label for="shape1">Rhombus</label><br>
-      <input type="radio" id="shape2" name="favShape" value="ruby">
-      <label for="shape2">Parallelogram</label><br>
-      <input type="radio" id="shape3" name="favShape" value="python">
-      <label for="shape3">Octagon</label>
-
+      <div class="form-group">
+        <h2>What's your spirit animal?</h2>
+        <input class="form-check-input" type="radio" id="spirit1" name="spiritAnimal" value="javascript">
+        <label for="spirit1">Wolf</label><br>
+        <input class="form-check-input" type="radio" id="spirit2" name="spiritAnimal" value="ruby">
+        <label for="spirit2">Hedgehog</label><br>
+        <input class="form-check-input" type="radio" id="spirit3" name="spiritAnimal" value="python">
+        <label for="spirit3">Cobra</label>
+      </div>
       <br>
 
-      <h2>What do you find more interesting?</h2>
-      <input type="radio" id="interest1" name="whatInterest" value="javascript">
-      <label for="int1">Solving logic puzzles</label><br>
-      <input type="radio" id="interest2" name="whatInterest" value="ruby">
-      <label for="int2">Aesthetic design</label><br>
-      <input type="radio" id="interest3" name="whatInterest" value="python">
-      <label for="int3">Building games</label>
-
-      <br>
-
-      <h2>What's your spirit animal?</h2>
-      <input type="radio" id="spirit1" name="spiritAnimal" value="javascript">
-      <label for="spirit1">Wolf</label><br>
-      <input type="radio" id="spirit2" name="spiritAnimal" value="ruby">
-      <label for="spirit2">Hedgehog</label><br>
-      <input type="radio" id="spirit3" name="spiritAnimal" value="python">
-      <label for="spirit3">Cobra</label>
-
-      <br>
-
-      <h2>What TV show would you rather watch?</h2>
-      <input type="radio" id="tv1" name="tvShow" value="javascript">
-      <label for="tv1">Is it Cake?</label><br>
-      <input type="radio" id="tv2" name="tvShow" value="ruby">
-      <label for="tv2">Gilmore Girls</label><br>
-      <input type="radio" id="tv3" name="tvShow" value="python">
-      <label for="tv3">Survivor</label>
+      <div class="form-group">
+        <h2>What TV show would you rather watch?</h2>
+        <input class="form-check-input" type="radio" id="tv1" name="tvShow" value="javascript">
+        <label class="form-check-label" for="tv1">Is it Cake?</label><br>
+        <input class="form-check-input" type="radio" id="tv2" name="tvShow" value="ruby">
+        <label class="form-check-label" for="tv2">Gilmore Girls</label><br>
+        <input class="form-check-input" type="radio" id="tv3" name="tvShow" value="python">
+        <label class="form-check-label" for="tv3">Survivor</label>
+      </div>
       <br>
       <br>
       <button type="submit">Get Results!</button>
     </form>
   </div>
-  <br>
-  <button type="button" id="reset">Retake Quiz</button>
+
 
   <div id="javascript">
     <h1>You got Javascript!</h1>
@@ -83,7 +93,8 @@
     <h1>You got Python!</h1>
     <p>Congrats! Your results show that you should begin your coding journey learning Python. You get to learn a language that is beginner-friendly, versatile, and one of the fastest growing programming languages that is also in high-demand!</p>
   </div>
-
+  <br>
+  <button type="button" id="reset">Retake Quiz</button>
 
 
 </body>
