@@ -1,15 +1,15 @@
 body {
   justify-content: center;
-  align-items: top;
-  background color: #eec0c6;
 
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-  'Lucida Sans', Arial, sans-serif;
-
+    'Lucida Sans', Arial, sans-serif;
 }
 
 body {
   background-color: teal;
-  border-radius: 5px
-  color: white;
+  border-radius: 5px;
+}
+
+#languageHeader {
+  background-color: darkgoldenrod;
 }
