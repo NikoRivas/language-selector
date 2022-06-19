@@ -1,4 +1,4 @@
-window.onload = function () {
+window.addEventListener('load', function () {
   let javascriptAnswer = document.getElementById('javascript');
   javascriptAnswer.style.display = 'none';
   let rubyAnswer = document.getElementById('ruby');
@@ -8,6 +8,7 @@ window.onload = function () {
 
   let form = document.querySelector('form');
   form.onsubmit = function (event) {
+    document.getElementById('quiz').style.display = 'none';
     let javascriptCount = 0;
     let rubyCount = 0;
     let pythonCount = 0;
@@ -34,4 +35,4 @@ window.onload = function () {
     }
     event.preventDefault();
   };
-};
+});
