@@ -1,4 +1,15 @@
-h1 {
-  color: blue;
-  text-align: center;
+body {
+  justify-content: center;
+  align-items: top;
+  background color: #eec0c6;
+
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+  'Lucida Sans', Arial, sans-serif;
+
+}
+
+main {
+  background-color: teal;
+  border-radius: 5px
+  color: white;
 }
