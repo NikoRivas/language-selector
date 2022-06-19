@@ -5,10 +5,16 @@ window.addEventListener('load', function () {
   rubyAnswer.style.display = 'none';
   let pythonAnswer = document.getElementById('python');
   pythonAnswer.style.display = 'none';
+  let resetBtn = document.getElementById('reset');
+  resetBtn.style.display = 'none';
+  resetBtn.onclick = function () {
+    location.reload();
+  };
 
   let form = document.querySelector('form');
   form.onsubmit = function (event) {
     document.getElementById('quiz').style.display = 'none';
+    resetBtn.removeAttribute('style');
     let javascriptCount = 0;
     let rubyCount = 0;
     let pythonCount = 0;
