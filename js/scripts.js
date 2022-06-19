@@ -32,7 +32,6 @@ window.onload = function () {
     } else {
       javascriptAnswer.style.display = 'block';
     }
-    console.log(javascriptCount, rubyCount, pythonCount);
     event.preventDefault();
   };
 };
