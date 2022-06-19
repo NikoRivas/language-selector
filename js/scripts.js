@@ -27,5 +27,14 @@ window.onload = function () {
         }
       }
     }
+    if (javascriptCount > rubyCount && javascriptCount > pythonCount) {
+      javascriptAnswer.style.display = 'block';
+    } else if (rubyCount > javascriptCount && rubyCount > pythonCount) {
+      rubyAnswer.style.display = 'block';
+    } else if (pythonCount > javascriptCount && pythonCount > rubyCount) {
+      pythonAnswer.style.display = 'block';
+    } else {
+      javascriptAnswer.style.display = 'block';
+    }
   };
 };
