@@ -1,5 +1,4 @@
 window.onload = function () {
-  event.preventDefault();
   let javascriptAnswer = document.getElementById('javascript');
   javascriptAnswer.style.display = 'none';
   let rubyAnswer = document.getElementById('ruby');
@@ -9,21 +8,18 @@ window.onload = function () {
 
   let form = document.querySelector('form');
   form.onsubmit = function (event) {
-    function getInputsByValue(input) {
-      let javascriptCount = 0;
-      let rubyCount = 0;
-      let pythonCount = 0;
-      const allElements = document.querySelectorAll('input');
-      for (i = 0; i < allElements.length; i++) {
-        allElements[i];
-        if (allElements[i].checked === true) {
-          if (allElements[i] === 'javascript') {
-            javascriptCount++;
-          } else if (allElements[i] === 'ruby') {
-            rubyCount++;
-          } else if (allElements[i] === 'python') {
-            pythonCount++;
-          }
+    let javascriptCount = 0;
+    let rubyCount = 0;
+    let pythonCount = 0;
+    const allElements = document.querySelectorAll('input');
+    for (i = 0; i < allElements.length; i++) {
+      if (allElements[i].checked) {
+        if (allElements[i].value === 'javascript') {
+          javascriptCount++;
+        } else if (allElements[i].value === 'ruby') {
+          rubyCount++;
+        } else if (allElements[i].value === 'python') {
+          pythonCount++;
         }
       }
     }
@@ -36,5 +32,7 @@ window.onload = function () {
     } else {
       javascriptAnswer.style.display = 'block';
     }
+    console.log(javascriptCount, rubyCount, pythonCount);
+    event.preventDefault();
   };
 };
